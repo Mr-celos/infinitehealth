@@ -1,0 +1,10 @@
+local player = game.Players.LocalPlayer
+
+print(player.Name.." Activated: Infinite Health")
+game.Workspace:WaitForChild(player.Name).Humanoid.MaxHealth = 99999
+game.Workspace:WaitForChild(player.Name).Humanoid.MaxHealth = 9999
+
+while true do
+wait(.1)
+game.Workspace:WaitForChild(player.Name).Humanoid.MaxHealth += 100
+end
